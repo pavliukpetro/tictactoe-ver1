@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>XO game</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="wrapper">
+		<button class="new-game">Start new game</button>
+		<div class="message">X goes first. Start new game</div>
+		<div class="field">
+			<div class="row">
+				<div class="cell x" data-row="0" data-col="0"></div>
+				<div class="cell o" data-row="0" data-col="1"></div>
+				<div class="cell x" data-row="0" data-col="2"></div>
+			</div>
+			<div class="row">
+				<div class="cell o" data-row="1" data-col="0"></div>
+				<div class="cell x" data-row="1" data-col="1"></div>
+				<div class="cell o" data-row="1" data-col="2"></div>
+			</div>
+			<div class="row">
+				<div class="cell x" data-row="2" data-col="0"></div>
+				<div class="cell o" data-row="2" data-col="1"></div>
+				<div class="cell x" data-row="2" data-col="2"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
