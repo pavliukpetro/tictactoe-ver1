@@ -6,11 +6,12 @@
 	var cells;
 	var message = document.querySelector('.message');
 	var move;
-	var movesArr = [[],[],[]]
+	var movesArr = [[],[],[]];
 
 	newGameBtn.addEventListener("click", function(){
 		var i;
 		move = 'x';
+		movesArr = [[],[],[]];
 		cells = document.querySelectorAll('.cell');
 		message.innerHTML = 'X turn';
 		message.classList.remove('winx');
