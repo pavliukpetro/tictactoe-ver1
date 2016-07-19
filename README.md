@@ -1,4 +1,4 @@
-# Game XO (Tic-tac-toe, Noughts and crosses, Xs and Os, Крестики и Нолики)
+# Game Tic-tac-toe (Noughts and crosses, Xs and Os, Крестики и Нолики)
 Game version 1.0.
 
 A simple way to create this game.
