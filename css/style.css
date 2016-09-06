@@ -2,61 +2,62 @@ html{
 	height: 100%;
 }
 body {
-    background: linear-gradient(142deg, #f4a35b, #f4655b 31%, #d16098 65%, #ca3469);
-    height: 100%;
-    margin: 0;
-    font-family: Montserrat;
+	background: linear-gradient(142deg, #f4a35b, #f4655b 31%, #d16098 65%, #ca3469);
+	min-height: 100%;
+	margin: 0;
+	font-family: Montserrat;
 }
 .wrapper{
 	margin: 0 20px;
 	text-align: center;
+	height: 100%;
 }
 .field{
-	width: 460px;
-    border: 5px solid #273032;
-    margin: 0 auto;
-    background: rgba(250, 250, 250, 1);
-    border-radius: 5px;
+	width: 298px;
+	border: 5px solid #273032;
+	margin: 0 auto;
+	background: rgba(250, 250, 250, 1);
+	border-radius: 5px;
 }
 .message {
-    margin: 0 0 20px;
-    font-size: 24px;
-    color: #273032;
+	margin: 0 0 20px;
+	font-size: 24px;
+	color: #273032;
 }
 .winx{
-    text-shadow: 2px 2px 2px #d16098;
+	text-shadow: 2px 2px 2px #d16098;
 }
 .wino{
-    text-shadow: 2px 2px 2px #33a9dc;
+	text-shadow: 2px 2px 2px #33a9dc;
 }
 .row {
-    float: left;
+	float: left;
 }
 .cell{
 	border: 1px solid #333;
-	width: 150px;
-	height: 150px;
+	width: 96px;
+	height: 96px;
 	position: relative;
 	text-align: left;
 	cursor: pointer;
 }
 .cell.x:after {
-    content: "X";
-    color: #d16098;
-    font-size: 120px;
-    line-height: 148px;
-    width: 148px;
-    text-align: center;
-    position: absolute;
+	content: "X";
+	color: #d16098;
+	font-size: 80px;
+	line-height: 96px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
 }
 .cell.o:after {
-    content: "O";
-    color: #33a9dc;
-    font-size: 120px;
-    line-height: 148px;
-    width: 148px;
-    text-align: center;
-    position: absolute;
+	content: "O";
+	color: #33a9dc;
+	font-size: 80px;
+	line-height: 96px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
 }
 .clearfix{
 	clear: both;
@@ -65,12 +66,29 @@ div{
 	box-sizing: border-box;
 }
 button {
-    margin: 25px auto;
-    border-radius: 5px;
-    border: none;
-    padding: 20px 40px;
-    font-size: 18px;
-    color: #d16098;
-    font-weight: 600;
-    cursor: pointer;
+	margin: 25px auto;
+	border-radius: 5px;
+	border: none;
+	padding: 20px 40px;
+	font-size: 18px;
+	color: #d16098;
+	font-weight: 600;
+	cursor: pointer;
+}
+@media all and (min-width: 500px){
+	.field{
+		width: 460px;
+	}
+	.cell{
+		width: 150px;
+		height: 150px;
+	}
+	.cell.x:after {
+		font-size: 120px;
+		line-height: 148px;
+	}
+	.cell.o:after {
+		font-size: 120px;
+		line-height: 148px;
+	}
 }
